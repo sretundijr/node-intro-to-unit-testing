@@ -11,6 +11,7 @@ function outputArray(input, length) {
     return array;
 }
 
+//built to many arrays
 it('It should return fizzbuzz and be divisble by 15', function () {
     describe('fizzBuzzer', function () {
         var argumentArray = [15, 30, 45, 60, 75, 90];
@@ -66,7 +67,8 @@ it('should return an error', function () {
 
             // ***************
             //could we talk about this one
-
+            //i also tried the expect(fn).to.throw(Error)
+            //but couldn't get it to work
             // (function () {
             //     fizzBuzzer(item);
             // }).should.throw(Error);
