@@ -1,5 +1,9 @@
-const should = require('chai').should();
+// const should = require('chai').should();
+// const expect = require('chai').require();
 
+const chai = require('chai');
+const should = chai.should();
+const expect = chai.expect();
 const fizzBuzzer = require('../fizzBuzzer');
 
 function outputArray(input, length) {
@@ -65,6 +69,8 @@ it('should return an error', function () {
 
         argumentArray.forEach(function (item) {
 
+            // expect(fizzBuzzer(item)).to.throw(Error);
+
             // ***************
             //could we talk about this one
             //i also tried the expect(fn).to.throw(Error)
@@ -74,8 +80,8 @@ it('should return an error', function () {
             // }).should.throw(Error);
 
             // (fizzBuzzer(item)).should.throw(Error);
-            var answer = fizzBuzzer(item);
-            answer.should.throw(Error);
+            // var answer = fizzBuzzer(item);
+            // answer.should.throw(Error);
         })
     })
 })
